@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng nhập , Đăng ký</title>
+	<link rel="stylesheet" type="text/css" href="..\css\login.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="C:\Users\Admin\Desktop\Travel\js\day.js" ></script>
+
+</head>
+<body style="background-color: #E9EBEE" onload="loadform()">
+	<header>
+		<div id="div_logo">
+			<div id="div_logo1">
+				<img src="..\image\logo.png" width="200" height="70" style="padding-left: 0;">
+			</div>
+		</div>
+		<div id="div_user_pass">
+			<!-- <form> -->
+				<div class="div_login">
+					<p style="margin: 1% 0 1% 0 ;font-size: 15px;">Email or phone number :</p>
+					<input type="text" name="email" style="border-radius: 5px;font-size: 15px;">
+				</div>
+				<div class="div_login">
+					<p style="margin: 1% 0 1% 0 ;font-size: 15px;">Password :</p>
+					<input type="text" name="email" style="border-radius: 5px;font-size: 15px;">
+				</div>
+				<div class="div_login" id="div_click">
+					<a href="..\public\home.html"><button id="button_login" class="btn btn-info">Login</button></a>	
+				</div>
+			<!-- </form>	 -->
+		</div>	
+	</header>
+	<div id="div1">
+		<img src="..\image\anh1.png">
+	</div>
+	<div id="div2">
+		<form>
+			<div id="div3">
+				<h2>Tạo Tài Khoản Mới</h2>
+				<p>Nhanh chóng dễ dàng </p>
+				<input class="class_border_radius_5px" type="text" name="txtHo" size="20" placeholder="Họ">
+				<input class="class_border_radius_5px" type="text" name="txtTen" size="20" placeholder="Tên">	
+				<input class="class_border_radius_5px" type="text" name="txtTen" size="46" placeholder="Số di động hoặc Email">
+				<input class="class_border_radius_5px" type="text" name="txtTen" size="46" placeholder="Nhập mật khẩu mới">
+				<p style="margin-top: 1em;color: #666666"><strong>Ngày Sinh</strong></p>
+				<select id="day">
+					<option>Ngày</option>
+				</select>
+				<select id="month" onchange="loadDay()">
+					<option>Tháng</option>
+				</select>
+				<select id="year" onchange="loadDay()">
+					<option>Năm</option>
+				</select>
+				<p style="margin-top: 1em;color: #666666"><strong>Giới Tính</strong></p>
+				<input type="radio" name="gioitinh" value="Nam"> <label>Nam</label>
+				<input type="radio" name="gioitinh" value="Nu"> <label>Nữ</label>
+				<input type="radio" name="gioitinh" value="Nu"> <label>Khác</label>
+				<br>
+				<button style="margin-top: 0.8em;" type="submit" id="button_dangKy"><strong>Đăng Ký</strong></button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

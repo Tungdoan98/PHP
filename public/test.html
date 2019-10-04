@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+    <div id="button1" class="div_trangthai_upload">
+                  <img style="width: 30px;height: 25px;" 
+                  src="..\image\icon_image2.png">
+                  <strong style="margin-top: 10px;">Ảnh</strong>
+              </div>
+              <input id="button2" type="file" name="aaa"> 
+  <script>
+    $(document).ready(function(){
+      $("#button1").click(function(){
+        $("#button2").click();
+      });
+    })
+  </script>
+
+</body>
+</html>
